@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=4 format=3 uid="uid://dyhjmba0ephid"]
 
-[ext_resource type="PackedScene" uid="uid://dic2qu5p043d1" path="res://wall_or_floor.tscn" id="1_qpvug"]
+[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://wall_or_floor.tscn" id="1_qpvug"]
+[ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://spring.tscn" id="2_omo32"]
+[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://spike.tscn" id="3_0882r"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -20,7 +22,7 @@ rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
 [node name="WallOrFloor4" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(8289, 3493)
+position = Vector2(8334, 3369)
 rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
@@ -33,3 +35,38 @@ scale = Vector2(-0.0954072, -2.12735)
 position = Vector2(5151, 2903)
 rotation = 0.34383
 scale = Vector2(2.71771, 1.60851)
+
+[node name="Spring" parent="." instance=ExtResource("2_omo32")]
+position = Vector2(8061, 2984)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring2" parent="." instance=ExtResource("2_omo32")]
+position = Vector2(10046, 3695)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring3" parent="." instance=ExtResource("2_omo32")]
+position = Vector2(10803, 3966)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring4" parent="." instance=ExtResource("2_omo32")]
+position = Vector2(10458, 3843)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spike" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(10280, 3122)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike2" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(11056, 3400)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike3" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(10693, 3270)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
