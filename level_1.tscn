@@ -1,30 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=2 format=3 uid="uid://dyhjmba0ephid"]
 
-[ext_resource type="Texture2D" uid="uid://dpcfrfqqtuy3n" path="res://block.png" id="1_gctrd"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8iqmj"]
-size = Vector2(1240, 1240)
+[ext_resource type="PackedScene" uid="uid://dic2qu5p043d1" path="res://wall_or_floor.tscn" id="1_qpvug"]
 
 [node name="Level 1" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-341, 573)
-rotation = 0.415855
-scale = Vector2(12.607, 0.887)
+[node name="WallOrFloor" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(-511, 693)
+rotation = 0.344691
+scale = Vector2(19.2383, -2.12735)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-texture = ExtResource("1_gctrd")
+[node name="WallOrFloor2" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(10978, 4818)
+rotation = 0.344691
+scale = Vector2(19.2383, -2.12735)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-shape = SubResource("RectangleShape2D_8iqmj")
+[node name="WallOrFloor3" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(1305, -243)
+rotation = 0.344691
+scale = Vector2(-0.0954072, -2.12735)
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2(1120, -741)
-rotation = -1.5708
-scale = Vector2(1.9, 0.05)
+[node name="WallOrFloor4" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(8289, 3493)
+rotation = 0.344691
+scale = Vector2(-0.0954072, -2.12735)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
-texture = ExtResource("1_gctrd")
+[node name="WallOrFloor5" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(10730, 3246)
+rotation = -1.22697
+scale = Vector2(-0.0954072, -2.12735)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-shape = SubResource("RectangleShape2D_8iqmj")
+[node name="WallOrFloor6" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(5151, 2903)
+rotation = 0.34383
+scale = Vector2(2.71771, 1.60851)
