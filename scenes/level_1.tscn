@@ -77,3 +77,7 @@ max_contacts_reported = 10
 contact_monitor = true
 
 [node name="Camera2D" type="Camera2D" parent="Ball"]
+
+[node name="Node2D" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(544, 349)
+rotation = 0.339361

@@ -4,9 +4,10 @@ extends RigidBody2D
 @onready var sprite_2d = $Sprite2D
 @onready var collision_shape_2d = $CollisionShape2D
 
+var is_dead = false
 
 func _input(event):
-	if visible == true:
+	if is_dead == false:
 		if event.is_action_pressed("shrink"):
 			sprite_2d.scale.x = sprite_2d.scale.x * .9
 			sprite_2d.scale.y = sprite_2d.scale.y * .9
@@ -14,19 +15,19 @@ func _input(event):
 			collision_shape_2d.scale.x = collision_shape_2d.scale.x * .9
 			collision_shape_2d.scale.y = collision_shape_2d.scale.y * .9
 			
-	if event.is_action_pressed("grow"):
+		if event.is_action_pressed("grow"):
 			sprite_2d.scale.x = sprite_2d.scale.x * 1.1
 			sprite_2d.scale.y = sprite_2d.scale.y * 1.1
 			
 			collision_shape_2d.scale.x = collision_shape_2d.scale.x * 1.1
 			collision_shape_2d.scale.y = collision_shape_2d.scale.y * 1.1
 
-
 func SpikeHit():
+	print('SPIKE HIT')
+	self.is_dead = true
 	self.sleeping = true
-	self.visible = false
-
-
+	$Sprite2D.visible = false
+	$CPUParticles2D.emitting = true
 
 func HitSpring():
-	
+	pass	
