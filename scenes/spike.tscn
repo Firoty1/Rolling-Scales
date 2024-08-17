@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctwchxsj2ndyr"]
 
 [ext_resource type="Texture2D" uid="uid://dr0jffcdlrfj" path="res://assets/Spike.png" id="1_c3sde"]
-[ext_resource type="Script" path="res://scenes/spike.gd" id="1_nk1ua"]
+[ext_resource type="Script" path="res://scripts/spike.gd" id="1_mfrs7"]
 
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_nk1ua")
+[node name="Spike" type="Node2D"]
+script = ExtResource("1_mfrs7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_c3sde")
