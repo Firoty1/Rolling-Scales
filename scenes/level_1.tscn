@@ -23,14 +23,14 @@ rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
 [node name="WallOrFloor4" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(8334, 3369)
+position = Vector2(8021, 2992)
 rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
 [node name="WallOrFloor5" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(10730, 3246)
+position = Vector2(10753, 3254)
 rotation = -1.22697
-scale = Vector2(-0.0954072, -2.12735)
+scale = Vector2(-0.0954072, -2.16223)
 
 [node name="WallOrFloor6" parent="." instance=ExtResource("1_qpvug")]
 position = Vector2(5151, 2903)
@@ -38,7 +38,7 @@ rotation = 0.34383
 scale = Vector2(2.71771, 1.60851)
 
 [node name="Spring" parent="." instance=ExtResource("2_omo32")]
-position = Vector2(8061, 2984)
+position = Vector2(7595, 2812)
 rotation = 0.34383
 scale = Vector2(0.15, 0.15)
 
@@ -58,21 +58,42 @@ rotation = 0.34383
 scale = Vector2(0.15, 0.15)
 
 [node name="Spike" parent="." instance=ExtResource("3_0882r")]
-position = Vector2(10280, 3122)
+position = Vector2(10191, 3090)
 rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
 [node name="Spike2" parent="." instance=ExtResource("3_0882r")]
-position = Vector2(11056, 3400)
+position = Vector2(10374, 3156)
 rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
 [node name="Spike3" parent="." instance=ExtResource("3_0882r")]
-position = Vector2(10693, 3270)
+position = Vector2(10558, 3222)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike4" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(10738, 3287)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike7" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(11099, 3415)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike8" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(11282, 3480)
+rotation = 3.48542
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike6" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(10920, 3351)
 rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
 [node name="Ball" parent="." instance=ExtResource("4_ttb3u")]
+gravity_scale = 3.0
 max_contacts_reported = 10
 contact_monitor = true
 
