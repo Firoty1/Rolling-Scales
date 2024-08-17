@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://4jcx4xy0hv0g"]
+
+[ext_resource type="Texture2D" uid="uid://uns6tnqdeqc6" path="res://arrow boost.png" id="1_i0hbr"]
+
+[node name="Booster" type="AnimatableBody2D"]
+position = Vector2(636, 319)
+
+[node name="ArrowBoost" type="Sprite2D" parent="."]
+position = Vector2(-69, 158)
+texture = ExtResource("1_i0hbr")

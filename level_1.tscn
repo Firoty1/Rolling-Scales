@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=7 format=3 uid="uid://dyhjmba0ephid"]
 
 [ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://wall_or_floor.tscn" id="1_qpvug"]
 [ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://spring.tscn" id="2_omo32"]
 [ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://spike.tscn" id="3_0882r"]
 [ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://ball.tscn" id="4_ttb3u"]
+[ext_resource type="PackedScene" uid="uid://cpr4vx4qutjey" path="res://ramp.tscn" id="5_20fem"]
+[ext_resource type="PackedScene" uid="uid://4jcx4xy0hv0g" path="res://booster.tscn" id="6_el306"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -23,7 +25,7 @@ rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
 [node name="WallOrFloor4" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(8334, 3369)
+position = Vector2(8122, 3960)
 rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
@@ -72,8 +74,37 @@ position = Vector2(10693, 3270)
 rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
+[node name="Spike4" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(14241, 5272)
+rotation = 0.34383
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike5" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(14402, 5330)
+rotation = 0.34383
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike6" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(14575, 5392)
+rotation = 0.34383
+scale = Vector2(0.305, 0.305)
+
+[node name="Spike7" parent="." instance=ExtResource("3_0882r")]
+position = Vector2(14752, 5455)
+rotation = 0.34383
+scale = Vector2(0.305, 0.305)
+
 [node name="Ball" parent="." instance=ExtResource("4_ttb3u")]
 max_contacts_reported = 10
 contact_monitor = true
 
 [node name="Camera2D" type="Camera2D" parent="Ball"]
+
+[node name="ramp" parent="." instance=ExtResource("5_20fem")]
+position = Vector2(13937, 5082)
+rotation = 0.392699
+
+[node name="Booster" parent="." instance=ExtResource("6_el306")]
+position = Vector2(13349, 4887)
+rotation = 0.34383
+scale = Vector2(0.688047, 0.703848)

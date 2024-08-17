@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpr4vx4qutjey"]
+
+[ext_resource type="Texture2D" uid="uid://cnl3fowarpkbx" path="res://ramp.png" id="1_bqph7"]
+
+[node name="ramp" type="AnimatableBody2D"]
+position = Vector2(149, 64)
+
+[node name="Ramp" type="Sprite2D" parent="."]
+position = Vector2(-134, -15)
+texture = ExtResource("1_bqph7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(57, -43, 90, -65, 128, -95, 180, -142, 195, -158, 212, -171, 234, -183, 246, -180, 254, -172, 257, -157, 249, 57, 239, 73, 230, 77, 210, 78, 102, 82, 32, 87, -75, 95, -185, 103, -401, 110, -368, 98, -306, 81, -236, 64, -179, 51, -135, 41, -89, 27, -51, 13, -19, -1, 17, -19, 45, -35)
