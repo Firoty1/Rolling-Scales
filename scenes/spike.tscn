@@ -1,18 +1,20 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctwchxsj2ndyr"]
 
 [ext_resource type="Texture2D" uid="uid://dr0jffcdlrfj" path="res://assets/Spike.png" id="1_c3sde"]
+[ext_resource type="Script" path="res://scenes/spike.gd" id="1_nk1ua"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6vl65"]
-radius = 87.0
-height = 592.0
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nk1ua")
 
-[node name="Spike" type="AnimatableBody2D"]
-position = Vector2(525, 513)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-12, -70)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_6vl65")
-
-[node name="AnimatableBody2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_c3sde")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-312, 6, -258, -178, -163, -131, -58, -175, 24, -113, 106, -178, 148, -116, 237, -170, 289, 1)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
