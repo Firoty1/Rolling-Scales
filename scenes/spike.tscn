@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ctwchxsj2ndyr"]
 
-[ext_resource type="Texture2D" uid="uid://dr0jffcdlrfj" path="res://Spike.png" id="1_c3sde"]
+[ext_resource type="Texture2D" uid="uid://dr0jffcdlrfj" path="res://assets/Spike.png" id="1_c3sde"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6vl65"]
 radius = 87.0

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dyhjmba0ephid"]
 
-[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://wall_or_floor.tscn" id="1_qpvug"]
-[ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://spring.tscn" id="2_omo32"]
-[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://spike.tscn" id="3_0882r"]
-[ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://ball.tscn" id="4_ttb3u"]
+[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="1_qpvug"]
+[ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="2_omo32"]
+[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="3_0882r"]
+[ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_ttb3u"]
 
 [node name="Level 1" type="Node2D"]
 
