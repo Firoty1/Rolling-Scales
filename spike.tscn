@@ -6,11 +6,13 @@
 radius = 87.0
 height = 592.0
 
-[node name="Spike" type="Sprite2D"]
+[node name="Spike" type="AnimatableBody2D"]
 position = Vector2(525, 513)
-texture = ExtResource("1_c3sde")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-12, -70)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_6vl65")
+
+[node name="AnimatableBody2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_c3sde")
