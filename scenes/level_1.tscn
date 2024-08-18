@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=8 format=3 uid="uid://dyhjmba0ephid"]
 
 [ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="1_qpvug"]
 [ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="2_omo32"]
 [ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="3_0882r"]
 [ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_ttb3u"]
-[ext_resource type="PackedScene" uid="uid://dhjmjxj2p4jv5" path="res://scenes/ramp.tscn" id="5_1tflr"]
-[ext_resource type="PackedScene" uid="uid://bpj0v675n64cq" path="res://scenes/level_end.tscn" id="6_kb1e0"]
+[ext_resource type="PackedScene" path="res://scenes/ramp.tscn" id="5_1tflr"]
+[ext_resource type="PackedScene" path="res://scenes/level_end.tscn" id="6_kb1e0"]
+[ext_resource type="PackedScene" uid="uid://cfbl7watl7plf" path="res://scenes/turbo_arrow.tscn" id="7_yl3vn"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -116,3 +117,9 @@ scale = Vector2(1.44, 1.44)
 
 [node name="LevelEnd" parent="." instance=ExtResource("6_kb1e0")]
 position = Vector2(18437, 3717)
+
+[node name="TurboArrow" parent="." instance=ExtResource("7_yl3vn")]
+position = Vector2(15910, 5201)
+
+[node name="TurboArrow2" parent="." instance=ExtResource("7_yl3vn")]
+position = Vector2(14839, 5202)

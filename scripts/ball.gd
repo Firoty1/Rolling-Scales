@@ -1,4 +1,7 @@
 extends RigidBody2D
+
+class_name Player
+
 var size = 0
 
 @onready var sprite_2d = $Sprite2D
@@ -26,10 +29,11 @@ func _input(event):
 			
 			size = size + 1
 		
-		if event.is_action_pressed("turbo"):
-			var movement_direction = self.linear_velocity.normalized()
-			apply_central_impulse(movement_direction * 2500)
-
+func activateTurbo():
+	var movement_direction = self.linear_velocity.normalized()
+	apply_central_impulse(movement_direction * 2500)
+	
+	
 func SpikeHit():
 	print('SPIKE HIT')
 	self.is_dead = true
