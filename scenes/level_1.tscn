@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=6 format=3 uid="uid://dyhjmba0ephid"]
 
 [ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="1_qpvug"]
 [ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="2_omo32"]
 [ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="3_0882r"]
 [ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_ttb3u"]
+[ext_resource type="PackedScene" uid="uid://dhjmjxj2p4jv5" path="res://scenes/ramp.tscn" id="5_1tflr"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -36,6 +37,10 @@ scale = Vector2(-0.0954072, -2.12735)
 position = Vector2(5151, 2903)
 rotation = 0.34383
 scale = Vector2(2.71771, 1.60851)
+
+[node name="WallOrFloor7" parent="." instance=ExtResource("1_qpvug")]
+position = Vector2(17401, 6092)
+scale = Vector2(27.0585, 3.05621)
 
 [node name="Spring" parent="." instance=ExtResource("2_omo32")]
 position = Vector2(7724, 2864)
@@ -102,3 +107,8 @@ contact_monitor = true
 [node name="Node2D" parent="." instance=ExtResource("3_0882r")]
 position = Vector2(418, -694)
 rotation = 0.339361
+
+[node name="ramp" parent="." instance=ExtResource("5_1tflr")]
+position = Vector2(17383, 4979)
+rotation = 0.0523599
+scale = Vector2(1.44, 1.44)
