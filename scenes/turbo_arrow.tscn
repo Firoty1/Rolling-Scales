@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfbl7watl7plf"]
+
+[ext_resource type="Texture2D" uid="uid://d4i0cfl3ahwtr" path="res://assets/arrow_boost.png" id="1_6ar5g"]
+[ext_resource type="Script" path="res://scenes/turbo_arrow.gd" id="1_w5wjq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irbyr"]
+size = Vector2(429, 260)
+
+[node name="TurboArrow" type="Area2D"]
+script = ExtResource("1_w5wjq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(79.5, -130)
+shape = SubResource("RectangleShape2D_irbyr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6ar5g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
