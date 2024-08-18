@@ -17,7 +17,7 @@ config/icon="res://assets/icon.svg"
 
 [autoload]
 
-AudioControl="*res://scenes/AudioControl.tscn"
+AudioControl="*res://autoloads/AudioControl.tscn"
 
 [editor]
 

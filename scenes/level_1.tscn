@@ -76,7 +76,7 @@ rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
 [node name="Spike8" parent="." instance=ExtResource("3_0882r")]
-position = Vector2(5344, 2676)
+position = Vector2(5369, 2685)
 rotation = 0.34383
 scale = Vector2(0.305, 0.305)
 

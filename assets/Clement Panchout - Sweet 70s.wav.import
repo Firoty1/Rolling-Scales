@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://6l6y3dfe65vw"
-path="res://.godot/imported/Clement Panchout - Sweet 70s.wav-854594b38a468382e6e544011e55188a.sample"
+path="res://.godot/imported/Clement Panchout - Sweet 70s.wav-800143372b0c6de300f91bc3babe3194.sample"
 
 [deps]
 
-source_file="res://Clement Panchout - Sweet 70s.wav"
-dest_files=["res://.godot/imported/Clement Panchout - Sweet 70s.wav-854594b38a468382e6e544011e55188a.sample"]
+source_file="res://assets/Clement Panchout - Sweet 70s.wav"
+dest_files=["res://.godot/imported/Clement Panchout - Sweet 70s.wav-800143372b0c6de300f91bc3babe3194.sample"]
 
 [params]
 
