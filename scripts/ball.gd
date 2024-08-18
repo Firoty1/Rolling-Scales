@@ -39,7 +39,7 @@ func _input(event):
 func activateTurbo():
 	var movement_direction = self.linear_velocity.normalized()
 	apply_central_impulse(movement_direction * 2500)
-	
+	AudioControl.BoostSound()
 	
 func SpikeHit():
 	print('SPIKE HIT')

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpj0v675n64cq"]
 
-[ext_resource type="Script" path="res://scenes/level_end.gd" id="1_8jp1h"]
+[ext_resource type="Script" path="res://scripts/level_end.gd" id="1_8jp1h"]
 [ext_resource type="Texture2D" uid="uid://r5xkuaw1upp7" path="res://assets/LevelEnd.png" id="1_852w7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_voy7u"]
@@ -26,4 +26,8 @@ collision_mask = 2
 position = Vector2(491, 285)
 shape = SubResource("RectangleShape2D_voy7u")
 
+[node name="Wait" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Wait" to="." method="SceneChange"]

@@ -10,6 +10,10 @@ var list = [Level1]
 
 
 func _on_area_2d_body_entered(body):
+	$Wait.start()
+	AudioControl.WinSound()
+
+func SceneChange():
 	CurrentLevel = CurrentLevel + 1
 	if CurrentLevel > list.size() - 1:
 		get_tree().change_scene_to_file(start)

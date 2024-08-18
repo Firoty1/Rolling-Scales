@@ -9,13 +9,14 @@ const spring = preload(\"res://assets/Boss hit 1.wav\")
 const death = preload(\"res://assets/Balloon Pop 1.wav\")
 const boost = preload(\"res://assets/Suck 1V2.wav\")
 const shrinkandgrow = preload(\"res://assets/Jump 1.wav\")
+const levelend = preload(\"res://assets/Boss hit 1.wav\")
 
 func _ready():
 	MusicPlays()
 
 func MusicPlays():
 	$Music.set_stream(Music)
-	
+	$Music.play()
 
 func SpringSound():
 	$SoundEffects.set_stream(spring)
@@ -32,11 +33,16 @@ func ShrinkAndGrowSound():
 func BoostSound():
 	$SoundEffects.set_stream(boost)
 	$SoundEffects.play()
+
+func WinSound():
+	$SoundEffects.set_stream(levelend)
+	$SoundEffects.play()
 "
 
 [node name="AudioControl" type="Node"]
 script = SubResource("GDScript_uafv5")
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -0.5
 
 [node name="SoundEffects" type="AudioStreamPlayer" parent="."]
