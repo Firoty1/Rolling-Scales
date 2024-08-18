@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct36onk4dq5yx"]
+
+[sub_resource type="GDScript" id="GDScript_uafv5"]
+script/source = "extends Node
+
+const Music = preload(\"res://Clement Panchout - Sweet 70s.wav\")
+
+func _ready():
+	MusicPlays()
+
+func MusicPlays():
+	$Music.set_stream(Music)
+	$Music.play()
+"
+
+[node name="AudioControl" type="Node"]
+script = SubResource("GDScript_uafv5")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]

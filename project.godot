@@ -15,6 +15,10 @@ run/main_scene="res://scenes/start_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+AudioControl="*res://scenes/AudioControl.tscn"
+
 [editor]
 
 movie_writer/movie_file="/Users/stephengiordano/Development/Rolling-Scales/movie.avi"
