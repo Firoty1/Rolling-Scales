@@ -3,7 +3,8 @@
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_d5716"]
 [ext_resource type="Theme" uid="uid://om4baeju6rd8" path="res://scenes/main_theme.tres" id="1_por2g"]
 
-[node name="StartMenu" type="CenterContainer"]
+[node name="StartMenu" type="Control"]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -11,8 +12,23 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d5716")
 
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 98.0
+offset_right = 1149.0
+offset_bottom = 223.0
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "[center]Rolling Scales"
+fit_content = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
+offset_left = 463.0
+offset_top = 320.0
+offset_right = 688.0
+offset_bottom = 450.0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
@@ -26,6 +42,17 @@ unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("1_por2g")
 text = "Quit"
+
+[node name="MadeBy" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 44.0
+offset_top = 523.0
+offset_right = 1110.0
+offset_bottom = 601.0
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Created by Firoty and Steve Giordano"
+fit_content = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
