@@ -3,8 +3,8 @@ var size = 0
 
 @onready var sprite_2d = $Sprite2D
 @onready var collision_shape_2d = $CollisionShape2D
-
 var is_dead = false
+@onready var hud = $"../HUD"
 
 func _input(event):
 	if is_dead == false:
@@ -18,6 +18,7 @@ func _input(event):
 				
 				size = size - 1
 				
+				hud.SizeUpdate(size)
 		if event.is_action_pressed("grow"):
 			if size < 2:
 				sprite_2d.scale.x = sprite_2d.scale.x * 1.5
@@ -27,6 +28,7 @@ func _input(event):
 				collision_shape_2d.scale.y = collision_shape_2d.scale.y * 1.5
 				
 				size = size + 1
+				hud.SizeUpdate(size)
 		
 		if event.is_action_pressed("turbo"):
 			var movement_direction = self.linear_velocity.normalized()

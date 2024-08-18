@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyhjmba0ephid"]
+[gd_scene load_steps=8 format=3 uid="uid://dyhjmba0ephid"]
 
 [ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="1_qpvug"]
 [ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="2_omo32"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_ttb3u"]
 [ext_resource type="PackedScene" uid="uid://dhjmjxj2p4jv5" path="res://scenes/ramp.tscn" id="5_1tflr"]
 [ext_resource type="PackedScene" uid="uid://bpj0v675n64cq" path="res://scenes/level_end.tscn" id="6_kb1e0"]
+[ext_resource type="PackedScene" uid="uid://b4udhsebdtf6v" path="res://scenes/HUD.tscn" id="7_wtjyf"]
 
 [node name="Level 1" type="Node2D"]
 
@@ -15,12 +16,12 @@ rotation = 0.344691
 scale = Vector2(19.2383, -2.12735)
 
 [node name="WallOrFloor2" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(11090, 4858)
+position = Vector2(11030, 4836)
 rotation = 0.344691
 scale = Vector2(19.2383, -2.12735)
 
 [node name="WallOrFloor3" parent="." instance=ExtResource("1_qpvug")]
-position = Vector2(1342, -139)
+position = Vector2(1338, -127)
 rotation = 0.344691
 scale = Vector2(-0.0954072, -2.12735)
 
@@ -74,7 +75,7 @@ rotation = 3.48542
 scale = Vector2(0.305, 0.305)
 
 [node name="Spike8" parent="." instance=ExtResource("3_0882r")]
-position = Vector2(5422, 2704)
+position = Vector2(5344, 2676)
 rotation = 0.34383
 scale = Vector2(0.305, 0.305)
 
@@ -136,3 +137,5 @@ scale = Vector2(1.44, 1.44)
 
 [node name="LevelEnd" parent="." instance=ExtResource("6_kb1e0")]
 position = Vector2(18437, 3717)
+
+[node name="HUD" parent="." instance=ExtResource("7_wtjyf")]

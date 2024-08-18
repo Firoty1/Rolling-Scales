@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4udhsebdtf6v"]
+
+[ext_resource type="Script" path="res://scripts/HUD.gd" id="1_2f7o7"]
+[ext_resource type="Theme" uid="uid://om4baeju6rd8" path="res://scenes/main_theme.tres" id="1_cno07"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_2f7o7")
+
+[node name="SizeLabel" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 28.0
+offset_right = 110.0
+offset_bottom = 54.0
+theme = ExtResource("1_cno07")
+theme_override_font_sizes/font_size = 58
+text = "Size: 0"
