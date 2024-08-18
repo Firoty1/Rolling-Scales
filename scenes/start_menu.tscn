@@ -45,13 +45,12 @@ text = "Quit"
 
 [node name="MadeBy" type="RichTextLabel" parent="."]
 layout_mode = 2
-offset_left = 44.0
 offset_top = 523.0
-offset_right = 1110.0
+offset_right = 1149.0
 offset_bottom = 601.0
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
-text = "Created by Firoty and Steve Giordano"
+text = "[center]Created by Firoty and Steve Giordano"
 fit_content = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
