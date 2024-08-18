@@ -35,3 +35,7 @@ func SpikeHit():
 func HitSpring():
 	if size <= 0:
 		apply_impulse(Vector2(0, -2500), Vector2(0, 100))
+
+
+func _on_cpu_particles_2d_finished():
+	get_tree().change_scene_to_file("res://scenes/start_menu.tscn")
