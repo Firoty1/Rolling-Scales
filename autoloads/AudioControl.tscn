@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct36onk4dq5yx"]
+
+[sub_resource type="GDScript" id="GDScript_uafv5"]
+script/source = "extends Node
+
+
+const Music = preload(\"res://assets/Clement Panchout - Sweet 70s.wav\")
+const spring = preload(\"res://assets/Boss hit 1.wav\")
+const death = preload(\"res://assets/Balloon Pop 1.wav\")
+const boost = preload(\"res://assets/Suck 1V2.wav\")
+const shrinkandgrow = preload(\"res://assets/Jump 1.wav\")
+
+func _ready():
+	MusicPlays()
+
+func MusicPlays():
+	$Music.set_stream(Music)
+	
+
+func SpringSound():
+	$SoundEffects.set_stream(spring)
+	$SoundEffects.play()
+
+func DeathSound():
+	$SoundEffects.set_stream(death)
+	$SoundEffects.play()
+
+func ShrinkAndGrowSound():
+	$SoundEffects.set_stream(shrinkandgrow)
+	$SoundEffects.play()
+
+func BoostSound():
+	$SoundEffects.set_stream(boost)
+	$SoundEffects.play()
+"
+
+[node name="AudioControl" type="Node"]
+script = SubResource("GDScript_uafv5")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+
+[node name="SoundEffects" type="AudioStreamPlayer" parent="."]

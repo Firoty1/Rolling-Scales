@@ -19,6 +19,8 @@ func _input(event):
 				size = size - 1
 				
 				hud.SizeUpdate(size)
+				AudioControl.ShrinkAndGrowSound()
+				
 		if event.is_action_pressed("grow"):
 			if size < 2:
 				sprite_2d.scale.x = sprite_2d.scale.x * 1.5
@@ -29,6 +31,7 @@ func _input(event):
 				
 				size = size + 1
 				hud.SizeUpdate(size)
+				AudioControl.ShrinkAndGrowSound()
 		
 		if event.is_action_pressed("turbo"):
 			var movement_direction = self.linear_velocity.normalized()
@@ -39,11 +42,13 @@ func SpikeHit():
 	self.is_dead = true
 	self.sleeping = true
 	$Sprite2D.visible = false
+	AudioControl.DeathSound()
 	$CPUParticles2D.emitting = true
 
 func HitSpring():
 	if size <= 0:
 		apply_impulse(Vector2(0, -2500), Vector2(0, 100))
+		AudioControl.SpringSound()
 
 
 func _on_cpu_particles_2d_finished():
