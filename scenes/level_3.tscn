@@ -1,0 +1,158 @@
+[gd_scene load_steps=6 format=3 uid="uid://dit70owwsbchd"]
+
+[ext_resource type="PackedScene" uid="uid://b4udhsebdtf6v" path="res://scenes/HUD.tscn" id="1_ltllf"]
+[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="2_kxp03"]
+[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="3_te3fq"]
+[ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_6tri0"]
+[ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="5_ck25v"]
+
+[node name="Level3" type="Node2D"]
+position = Vector2(-1921, -1293)
+
+[node name="HUD" parent="." instance=ExtResource("1_ltllf")]
+
+[node name="WallOrFloor" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(-3202, 274)
+rotation = 0.34383
+scale = Vector2(27.6887, 1.60231)
+
+[node name="WallOrFloor2" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(13500, 6257)
+rotation = 0.34383
+scale = Vector2(27.6887, 1.60231)
+
+[node name="WallOrFloor3" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(5158, 3740)
+rotation = 0.34383
+scale = Vector2(2.90383, 1.49561)
+
+[node name="WallOrFloor4" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(2875, 1057)
+rotation = 0.34383
+scale = Vector2(0.096334, 2.20599)
+
+[node name="WallOrFloor5" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(6624, 3046)
+rotation = 0.34383
+scale = Vector2(0.096334, 2.20599)
+
+[node name="WallOrFloor6" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(8052, 3557)
+rotation = 0.34383
+scale = Vector2(0.096334, 2.20599)
+
+[node name="WallOrFloor7" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(9580, 4105)
+rotation = 0.34383
+scale = Vector2(0.096334, 2.20599)
+
+[node name="WallOrFloor8" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(8346, 2152)
+rotation = 1.91463
+scale = Vector2(0.0820478, 5.14361)
+
+[node name="WallOrFloor9" parent="." instance=ExtResource("2_kxp03")]
+position = Vector2(9789, 4055)
+rotation = 1.91463
+scale = Vector2(1.38807, -0.551234)
+
+[node name="Spike" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(5047, 3188)
+rotation = 0.34383
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike2" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(5279, 3270)
+rotation = 0.34383
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike3" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(6980, 1714)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike4" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(7273, 1819)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike5" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(7566, 1924)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike6" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(7861, 2030)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike7" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(8148, 2133)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike8" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(8448, 2240)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike9" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(8747, 2347)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike10" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(9042, 2453)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike11" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(9340, 2560)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike12" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(9631, 2664)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike13" parent="." instance=ExtResource("3_te3fq")]
+position = Vector2(9953, 3646)
+rotation = 0.34383
+scale = Vector2(0.5, 0.5)
+
+[node name="Ball" parent="." instance=ExtResource("4_6tri0")]
+position = Vector2(2340, 1501)
+
+[node name="Camera2D" type="Camera2D" parent="Ball"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Spring" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(6342, 3076)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring2" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(7627, 3537)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring3" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(9184, 4093)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring4" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(6871, 2317)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring5" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(8299, 2827)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring6" parent="." instance=ExtResource("5_ck25v")]
+position = Vector2(9825, 3376)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
