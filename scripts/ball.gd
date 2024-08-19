@@ -3,21 +3,22 @@ extends RigidBody2D
 class_name Player
 
 var size = 0
+var scaleMultiplier = 1.5
+var is_dead = false
 
 @onready var sprite_2d = $Sprite2D
 @onready var collision_shape_2d = $CollisionShape2D
-var is_dead = false
 @onready var hud = $"../HUD"
 
 func _input(event):
 	if is_dead == false:
 		if event.is_action_pressed("shrink"):
 			if size > -2:
-				sprite_2d.scale.x = sprite_2d.scale.x * .5
-				sprite_2d.scale.y = sprite_2d.scale.y * .5
+				sprite_2d.scale.x = sprite_2d.scale.x / scaleMultiplier
+				sprite_2d.scale.y = sprite_2d.scale.y / scaleMultiplier
 				
-				collision_shape_2d.scale.x = collision_shape_2d.scale.x * .5
-				collision_shape_2d.scale.y = collision_shape_2d.scale.y * .5
+				collision_shape_2d.scale.x = collision_shape_2d.scale.x / scaleMultiplier
+				collision_shape_2d.scale.y = collision_shape_2d.scale.y / scaleMultiplier
 				
 				size = size - 1
 				
@@ -26,13 +27,14 @@ func _input(event):
 				
 		if event.is_action_pressed("grow"):
 			if size < 2:
-				sprite_2d.scale.x = sprite_2d.scale.x * 1.5
-				sprite_2d.scale.y = sprite_2d.scale.y * 1.5
+				sprite_2d.scale.x = sprite_2d.scale.x * scaleMultiplier
+				sprite_2d.scale.y = sprite_2d.scale.y * scaleMultiplier
 				
-				collision_shape_2d.scale.x = collision_shape_2d.scale.x * 1.5
-				collision_shape_2d.scale.y = collision_shape_2d.scale.y * 1.5
+				collision_shape_2d.scale.x = collision_shape_2d.scale.x * scaleMultiplier
+				collision_shape_2d.scale.y = collision_shape_2d.scale.y * scaleMultiplier
 				
 				size = size + 1
+				
 				hud.SizeUpdate(size)
 				AudioControl.GrowSound()
 		
@@ -42,7 +44,6 @@ func activateTurbo():
 	AudioControl.BoostSound()
 	
 func SpikeHit():
-	print('SPIKE HIT')
 	self.is_dead = true
 	self.sleeping = true
 	$Sprite2D.visible = false
