@@ -249,7 +249,7 @@ rotation = 3.48542
 scale = Vector2(0.5, 0.5)
 
 [node name="Ball" parent="." instance=ExtResource("4_6tri0")]
-position = Vector2(19027, 6225)
+position = Vector2(1420, 967)
 
 [node name="Camera2D" type="Camera2D" parent="Ball"]
 zoom = Vector2(0.5, 0.5)
