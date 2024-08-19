@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://706mgfng7gir"]
+
+[ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="1_ej3mk"]
+[ext_resource type="PackedScene" uid="uid://b4udhsebdtf6v" path="res://scenes/HUD.tscn" id="2_4j8th"]
+[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="3_yh2h4"]
+[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="4_vox3t"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Ball" parent="." instance=ExtResource("1_ej3mk")]
+position = Vector2(538, 218)
+
+[node name="Camera2D" type="Camera2D" parent="Ball"]
+
+[node name="HUD" parent="." instance=ExtResource("2_4j8th")]
+
+[node name="WallOrFloor" parent="." instance=ExtResource("3_yh2h4")]
+position = Vector2(-659, 577)
+rotation = 0.34383
+scale = Vector2(11.5189, 1.33066)
+
+[node name="WallOrFloor3" parent="." instance=ExtResource("3_yh2h4")]
+position = Vector2(6603, 3178)
+rotation = 0.34383
+scale = Vector2(11.5189, 1.33066)
+
+[node name="WallOrFloor4" parent="." instance=ExtResource("3_yh2h4")]
+position = Vector2(3022, 2341)
+rotation = 0.34383
+scale = Vector2(11.5189, 1.33066)
+
+[node name="WallOrFloor2" parent="." instance=ExtResource("3_yh2h4")]
+position = Vector2(1629, -201)
+rotation = 1.91463
+scale = Vector2(3.27143, 0.222904)
+
+[node name="Spike" parent="." instance=ExtResource("4_vox3t")]
+position = Vector2(1270, 567)
+rotation = -1.22697
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike2" parent="." instance=ExtResource("4_vox3t")]
+position = Vector2(2863, 1831)
+rotation = 0.34383
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike3" parent="." instance=ExtResource("4_vox3t")]
+position = Vector2(3095, 1916)
+rotation = 0.34383
+scale = Vector2(0.5, 0.5)

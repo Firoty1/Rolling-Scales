@@ -11,6 +11,7 @@ point_count = 2
 
 [node name="Ball" type="RigidBody2D"]
 collision_layer = 3
+gravity_scale = 3.0
 script = ExtResource("1_7uv0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

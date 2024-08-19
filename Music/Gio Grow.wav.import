@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c8joclxva8rp4"
+path="res://.godot/imported/Gio Grow.wav-9f10d98653a40b445428f8c82a1ccc9a.sample"
+
+[deps]
+
+source_file="res://Music/Gio Grow.wav"
+dest_files=["res://.godot/imported/Gio Grow.wav-9f10d98653a40b445428f8c82a1ccc9a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
