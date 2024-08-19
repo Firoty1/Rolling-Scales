@@ -23,6 +23,19 @@ bbcode_enabled = true
 text = "[center]Rolling Scales"
 fit_content = true
 
+[node name="Title2" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 781.0
+offset_top = 329.0
+offset_right = 1214.0
+offset_bottom = 455.0
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "Controls:
+Press Up Arrow to grow
+Press Down Arrow to shrink"
+fit_content = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 offset_left = 463.0
