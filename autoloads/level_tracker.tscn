@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://i0qd3ps8m4gt"]
+
+[sub_resource type="GDScript" id="GDScript_kt85d"]
+script/source = "extends Node
+
+
+var Level1 = \"res://scenes/level_1.tscn\"
+var Level2 = \"res://scenes/level_2.tscn\"
+var CurrentLevel = 0
+var start = \"res://scenes/start_menu.tscn\"
+var list = [Level1, Level2]
+
+
+func NextLevel():
+	print(\"aib iabf iab fab fia b bn\")
+	CurrentLevel = CurrentLevel + 1
+	print(CurrentLevel)
+	if CurrentLevel > list.size() - 1:
+		AudioControl.GameWinSound()
+		get_tree().change_scene_to_file(start)
+	else :
+		AudioControl.WinSound()
+		get_tree().change_scene_to_file(list[CurrentLevel])
+"
+
+[node name="LevelTracker" type="Node"]
+script = SubResource("GDScript_kt85d")
