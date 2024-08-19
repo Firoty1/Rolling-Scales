@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://706mgfng7gir"]
 
 [ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="1_4onqy"]
-[ext_resource type="PackedScene" uid="uid://b4udhsebdtf6v" path="res://scenes/HUD.tscn" id="2_u4d2a"]
+[ext_resource type="PackedScene" path="res://scenes/HUD.tscn" id="2_u4d2a"]
 [ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="3_xepwp"]
 [ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="4_gaxwv"]
 [ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="5_ssi3h"]
@@ -90,14 +90,14 @@ rotation = 0.34383
 scale = Vector2(11.5189, 1.33066)
 
 [node name="WallOrFloor5" parent="Walls and Floors" instance=ExtResource("3_xepwp")]
-position = Vector2(5229, 1302)
+position = Vector2(5215, 1361)
 rotation = -2.79776
 scale = Vector2(0.654922, -0.0974519)
 
 [node name="WallOrFloor6" parent="Walls and Floors" instance=ExtResource("3_xepwp")]
 position = Vector2(5507, 1934)
 rotation = -2.79776
-scale = Vector2(0.0610332, -1.73421)
+scale = Vector2(0.061, -1.54)
 
 [node name="WallOrFloor7" parent="Walls and Floors" instance=ExtResource("3_xepwp")]
 position = Vector2(7908, 2196)
@@ -107,7 +107,7 @@ scale = Vector2(0.654922, -0.0974519)
 [node name="WallOrFloor8" parent="Walls and Floors" instance=ExtResource("3_xepwp")]
 position = Vector2(8213, 2901)
 rotation = -2.79776
-scale = Vector2(0.0610332, -1.73421)
+scale = Vector2(0.061, -1.6)
 
 [node name="WallOrFloor9" parent="Walls and Floors" instance=ExtResource("3_xepwp")]
 position = Vector2(13299, 5575)
@@ -156,7 +156,7 @@ rotation = 0.34383
 scale = Vector2(0.5, 0.5)
 
 [node name="Spike4" parent="Spikes" instance=ExtResource("4_gaxwv")]
-position = Vector2(4989, 1350)
+position = Vector2(4975, 1409)
 rotation = -1.22697
 scale = Vector2(0.5, 0.5)
 
@@ -188,4 +188,9 @@ scale = Vector2(0.1, 0.1)
 [node name="Spike10" parent="Spikes" instance=ExtResource("4_gaxwv")]
 position = Vector2(11150, 2939)
 rotation = -2.79777
+scale = Vector2(0.3, 0.3)
+
+[node name="Spike11" parent="Spikes" instance=ExtResource("4_gaxwv")]
+position = Vector2(11669, 3934)
+rotation = 0.345787
 scale = Vector2(0.3, 0.3)
