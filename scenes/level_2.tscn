@@ -19,7 +19,7 @@ zoom = Vector2(0.5, 0.5)
 [node name="HUD" parent="." instance=ExtResource("2_u4d2a")]
 
 [node name="WallOrFloor" parent="." instance=ExtResource("3_xepwp")]
-position = Vector2(-659, 577)
+position = Vector2(-729, 552)
 rotation = 0.34383
 scale = Vector2(11.5189, 1.33066)
 
@@ -53,17 +53,17 @@ rotation = 0.34383
 scale = Vector2(-0.0610332, 1.73421)
 
 [node name="WallOrFloor2" parent="." instance=ExtResource("3_xepwp")]
-position = Vector2(1629, -201)
+position = Vector2(1674, -265)
 rotation = 1.91463
 scale = Vector2(3.27143, 0.222904)
 
 [node name="Spike" parent="." instance=ExtResource("4_gaxwv")]
-position = Vector2(1270, 567)
+position = Vector2(1313, 514)
 rotation = -1.22697
 scale = Vector2(0.5, 0.5)
 
 [node name="Spike2" parent="." instance=ExtResource("4_gaxwv")]
-position = Vector2(2863, 1831)
+position = Vector2(2790, 1804)
 rotation = 0.34383
 scale = Vector2(0.5, 0.5)
 
@@ -83,7 +83,7 @@ rotation = 0.34383
 scale = Vector2(0.5, 0.5)
 
 [node name="Spring" parent="." instance=ExtResource("5_ssi3h")]
-position = Vector2(4442, 1878)
+position = Vector2(4400, 1863)
 rotation = 0.34383
 scale = Vector2(0.15, 0.15)
 
@@ -98,12 +98,12 @@ rotation = 0.34383
 scale = Vector2(-0.654922, 0.0974519)
 
 [node name="WallOrFloor11" parent="." instance=ExtResource("3_xepwp")]
-position = Vector2(11067, 3751)
+position = Vector2(11327, 3844)
 rotation = 0.34383
-scale = Vector2(-0.654922, 0.0974519)
+scale = Vector2(-1.50181, -0.0783141)
 
 [node name="WallOrFloor13" parent="." instance=ExtResource("3_xepwp")]
-position = Vector2(11111, 2999)
+position = Vector2(11170, 2906)
 rotation = 0.34383
 scale = Vector2(-0.321114, 0.0974519)
 
@@ -118,7 +118,7 @@ rotation = 0.34383
 scale = Vector2(-0.0610332, 1.73421)
 
 [node name="WallOrFloor12" parent="." instance=ExtResource("3_xepwp")]
-position = Vector2(11211, 4020)
+position = Vector2(11697, 4194)
 rotation = 0.34383
 scale = Vector2(-0.0610332, 2.30419)
 
@@ -138,12 +138,12 @@ rotation = 5.05622
 scale = Vector2(0.5, 0.5)
 
 [node name="Spike9" parent="." instance=ExtResource("4_gaxwv")]
-position = Vector2(11455, 3347)
+position = Vector2(11940, 3521)
 rotation = 0.34383
 scale = Vector2(0.1, 0.1)
 
 [node name="Spike10" parent="." instance=ExtResource("4_gaxwv")]
-position = Vector2(11091, 3032)
+position = Vector2(11150, 2939)
 rotation = 3.48542
 scale = Vector2(0.3, 0.3)
 
@@ -163,7 +163,7 @@ rotation = 0.34383
 scale = Vector2(0.15, 0.15)
 
 [node name="Spring7" parent="." instance=ExtResource("5_ssi3h")]
-position = Vector2(11109, 3644)
+position = Vector2(11470, 3773)
 rotation = 0.34383
 scale = Vector2(0.15, 0.15)
 

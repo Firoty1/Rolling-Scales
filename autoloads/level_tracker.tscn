@@ -16,6 +16,7 @@ func NextLevel():
 	print(CurrentLevel)
 	if CurrentLevel > list.size() - 1:
 		AudioControl.GameWinSound()
+		CurrentLevel = 0
 		get_tree().change_scene_to_file(gameOverScreen)
 	else :
 		AudioControl.WinSound()
