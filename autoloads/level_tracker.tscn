@@ -6,14 +6,12 @@ script/source = "extends Node
 var Level1 = \"res://scenes/level_1.tscn\"
 var Level2 = \"res://scenes/level_2.tscn\"
 var gameOverScreen = \"res://scenes/game_over_screen.tscn\"
-const Level3 = preload(\"res://scenes/level_3.tscn\")
+var Level3 = \"res://scenes/level_3.tscn\"
 var CurrentLevel = 0
 var list = [Level1, Level2, Level3]
 
 func NextLevel():
-	print(\"aib iabf iab fab fia b bn\")
 	CurrentLevel = CurrentLevel + 1
-	print(CurrentLevel)
 	if CurrentLevel > list.size() - 1:
 		AudioControl.GameWinSound()
 		CurrentLevel = 0
