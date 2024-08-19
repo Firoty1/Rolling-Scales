@@ -33,7 +33,7 @@ scale = Vector2(19.2383, -2.12735)
 [node name="WallOrFloor3" parent="WallOrFloors" instance=ExtResource("1_qpvug")]
 position = Vector2(1338, -127)
 rotation = -2.7969
-scale = Vector2(0.0954072, 2.12735)
+scale = Vector2(0.095, 2)
 
 [node name="WallOrFloor4" parent="WallOrFloors" instance=ExtResource("1_qpvug")]
 position = Vector2(8487, 3138)
