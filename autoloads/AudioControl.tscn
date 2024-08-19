@@ -30,10 +30,12 @@ func DeathSound():
 	$Death.play()
 
 func ShrinkSound():
+	$Shrink.volume_db = -10
 	$Shrink.set_stream(shrink)
 	$Shrink.play()
 
 func GrowSound():
+	$Grow.volume_db = -10
 	$Grow.set_stream(grow)
 	$Grow.play()
 
@@ -62,7 +64,6 @@ volume_db = -0.5
 volume_db = -0.2
 
 [node name="Shrink" type="AudioStreamPlayer" parent="."]
-volume_db = -0.3
 
 [node name="Grow" type="AudioStreamPlayer" parent="."]
 
