@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsw8oo7vewlnl"]
+
+[ext_resource type="Script" path="res://scripts/game_over_screen.gd" id="1_hq1i4"]
+[ext_resource type="Theme" uid="uid://om4baeju6rd8" path="res://themes/main_theme.tres" id="1_icmmf"]
+
+[node name="GameOverScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hq1i4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 1152.0
+offset_bottom = 162.0
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "[center]You did it!"
+fit_content = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 175.0
+offset_right = 1153.0
+offset_bottom = 300.0
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]Thanks for playing."
+fit_content = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 323.0
+offset_right = 760.0
+offset_bottom = 453.0
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_icmmf")
+text = "Go to Main Menu
+"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_icmmf")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_replay_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
