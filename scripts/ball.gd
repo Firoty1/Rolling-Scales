@@ -3,7 +3,8 @@ extends RigidBody2D
 class_name Player
 
 var size = 0
-var scaleMultiplier = 1.5
+var scaleMultiplier = 1.4
+
 var is_dead = false
 
 @onready var sprite_2d = $Sprite2D
@@ -57,4 +58,4 @@ func HitSpring():
 
 
 func _on_cpu_particles_2d_finished():
-	get_tree().change_scene_to_file("res://scenes/start_menu.tscn")
+	get_tree().reload_current_scene()
