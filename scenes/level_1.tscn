@@ -12,11 +12,11 @@
 [node name="Level 1" type="Node2D"]
 
 [node name="Ball" parent="." instance=ExtResource("4_ttb3u")]
-gravity_scale = 3.0
 max_contacts_reported = 10
 contact_monitor = true
 
 [node name="Camera2D" type="Camera2D" parent="Ball"]
+zoom = Vector2(0.5, 0.5)
 
 [node name="WallOrFloors" type="Node" parent="."]
 
@@ -135,7 +135,6 @@ scale = Vector2(0.15, 0.15)
 
 [node name="ramp" parent="." instance=ExtResource("5_1tflr")]
 position = Vector2(17385, 4986)
-rotation = 0.0523599
 scale = Vector2(1.44, 1.44)
 
 [node name="LevelEnd" parent="." instance=ExtResource("6_kb1e0")]

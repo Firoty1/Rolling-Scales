@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bohglhv3vh5bl"
+path="res://.godot/imported/Gio Win.wav-73b5e8bf8105cf5bfb769d75f5887eea.sample"
+
+[deps]
+
+source_file="res://Music/Gio Win.wav"
+dest_files=["res://.godot/imported/Gio Win.wav-73b5e8bf8105cf5bfb769d75f5887eea.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

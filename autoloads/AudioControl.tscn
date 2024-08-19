@@ -4,39 +4,52 @@
 script/source = "extends Node
 
 
-const Music = preload(\"res://assets/Clement Panchout - Sweet 70s.wav\")
-const spring = preload(\"res://assets/Boss hit 1.wav\")
-const death = preload(\"res://assets/Balloon Pop 1.wav\")
-const boost = preload(\"res://assets/Suck 1V2.wav\")
-const shrinkandgrow = preload(\"res://assets/Jump 1.wav\")
-const levelend = preload(\"res://assets/Boss hit 1.wav\")
+const Music1 = preload(\"res://Music/Gio loop short version.wav\")
+const Music2 = preload(\"res://Music/Gio loop.wav\")
+const spring = preload(\"res://Music/Gio Spring.wav\")
+const death = preload(\"res://Music/Gio Wilhelm Scream.wav\")
+const boost = preload(\"res://Music/Gio Booster.wav\")
+const shrink = preload(\"res://Music/Gio Shrink.wav\")
+const grow = preload(\"res://Music/Gio Grow.wav\")
+const levelend = preload(\"res://Music/Gio Win.wav\")
+const GameWin = preload(\"res://Music/Gio Final Win.wav\")
 
 func _ready():
 	MusicPlays()
 
 func MusicPlays():
-	$Music.set_stream(Music)
+	$Music.set_stream(Music1)
 	$Music.play()
 
 func SpringSound():
-	$SoundEffects.set_stream(spring)
-	$SoundEffects.play()
+	$Spring.set_stream(spring)
+	$Spring.play()
 
 func DeathSound():
-	$SoundEffects.set_stream(death)
-	$SoundEffects.play()
+	$Death.set_stream(death)
+	$Death.play()
 
-func ShrinkAndGrowSound():
-	$SoundEffects.set_stream(shrinkandgrow)
-	$SoundEffects.play()
+func ShrinkSound():
+	$Shrink.volume_db = -10
+	$Shrink.set_stream(shrink)
+	$Shrink.play()
+
+func GrowSound():
+	$Grow.volume_db = -10
+	$Grow.set_stream(grow)
+	$Grow.play()
 
 func BoostSound():
-	$SoundEffects.set_stream(boost)
-	$SoundEffects.play()
+	$Boost.set_stream(boost)
+	$Boost.play()
 
 func WinSound():
-	$SoundEffects.set_stream(levelend)
-	$SoundEffects.play()
+	$Win.set_stream(levelend)
+	$Win.play()
+
+func GameWinSound():
+	$GameWin.set_stream(GameWin)
+	$GameWin.play()
 "
 
 [node name="AudioControl" type="Node"]
@@ -45,4 +58,19 @@ script = SubResource("GDScript_uafv5")
 [node name="Music" type="AudioStreamPlayer" parent="."]
 volume_db = -0.5
 
-[node name="SoundEffects" type="AudioStreamPlayer" parent="."]
+[node name="Spring" type="AudioStreamPlayer" parent="."]
+
+[node name="Death" type="AudioStreamPlayer" parent="."]
+volume_db = -0.2
+
+[node name="Shrink" type="AudioStreamPlayer" parent="."]
+
+[node name="Grow" type="AudioStreamPlayer" parent="."]
+
+[node name="Boost" type="AudioStreamPlayer" parent="."]
+
+[node name="Win" type="AudioStreamPlayer" parent="."]
+
+[node name="GameWin" type="AudioStreamPlayer" parent="."]
+
+[connection signal="finished" from="Music" to="." method="_ready"]

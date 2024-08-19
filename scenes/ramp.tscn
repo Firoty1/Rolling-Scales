@@ -4,6 +4,7 @@
 
 [node name="ramp" type="StaticBody2D"]
 position = Vector2(437, 270)
+rotation = 0.0523599
 collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
