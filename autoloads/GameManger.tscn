@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://clwkysei22nck"]
+
+[sub_resource type="GDScript" id="GDScript_kt85d"]
+script/source = "extends Node
+
+var Level1 = \"res://scenes/level_1.tscn\"
+var Level2 = \"res://scenes/level_2.tscn\"
+var gameOverScreen = \"res://scenes/game_over_screen.tscn\"
+
+var CurrentLevel = 0
+var list = [Level1, Level2]
+
+var isPaused = false
+
+func NextLevel():
+	print(\"aib iabf iab fab fia b bn\")
+	CurrentLevel = CurrentLevel + 1
+	print(CurrentLevel)
+	if CurrentLevel > list.size() - 1:
+		AudioControl.GameWinSound()
+		CurrentLevel = 0
+		get_tree().change_scene_to_file(gameOverScreen)
+	else :
+		AudioControl.WinSound()
+		get_tree().change_scene_to_file(list[CurrentLevel])
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_P:
+			isPaused = !isPaused
+			get_tree().paused = isPaused
+"
+
+[node name="LevelTracker" type="Node"]
+process_mode = 3
+script = SubResource("GDScript_kt85d")

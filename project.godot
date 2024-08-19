@@ -18,7 +18,7 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 AudioControl="*res://autoloads/AudioControl.tscn"
-LevelTracker="*res://autoloads/level_tracker.tscn"
+LevelTracker="*res://autoloads/GameManger.tscn"
 
 [display]
 
