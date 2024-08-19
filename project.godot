@@ -20,6 +20,10 @@ config/icon="res://assets/icon.svg"
 AudioControl="*res://autoloads/AudioControl.tscn"
 LevelTracker="*res://autoloads/level_tracker.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor]
 
 movie_writer/movie_file="/Users/stephengiordano/Development/Rolling-Scales/movie.avi"
