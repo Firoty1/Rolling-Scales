@@ -33,7 +33,8 @@ theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = "Controls:
 Press Up Arrow to grow
-Press Down Arrow to shrink"
+Press Down Arrow to shrink
+Press P to pause game"
 fit_content = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
