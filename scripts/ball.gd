@@ -22,7 +22,7 @@ func _input(event):
 				size = size - 1
 				
 				hud.SizeUpdate(size)
-				AudioControl.ShrinkAndGrowSound()
+				AudioControl.ShrinkSound()
 				
 		if event.is_action_pressed("grow"):
 			if size < 2:
@@ -34,7 +34,7 @@ func _input(event):
 				
 				size = size + 1
 				hud.SizeUpdate(size)
-				AudioControl.ShrinkAndGrowSound()
+				AudioControl.GrowSound()
 		
 func activateTurbo():
 	var movement_direction = self.linear_velocity.normalized()

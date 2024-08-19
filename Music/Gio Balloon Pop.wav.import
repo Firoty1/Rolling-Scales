@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cy38c38f0xyrc"
+path="res://.godot/imported/Gio Balloon Pop.wav-82b84b8b0a014a278ca3d297aadbfef9.sample"
+
+[deps]
+
+source_file="res://Music/Gio Balloon Pop.wav"
+dest_files=["res://.godot/imported/Gio Balloon Pop.wav-82b84b8b0a014a278ca3d297aadbfef9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
