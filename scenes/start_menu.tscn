@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3mfe4tobaj1m"]
+[gd_scene load_steps=5 format=3 uid="uid://c3mfe4tobaj1m"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_d5716"]
 [ext_resource type="Theme" uid="uid://om4baeju6rd8" path="res://scripts/themes/main_theme.tres" id="1_por2g"]
+[ext_resource type="Texture2D" uid="uid://x3gxlu41oxil" path="res://assets/cheese.png" id="3_ev4uk"]
+
+[sub_resource type="Curve2D" id="Curve2D_elj85"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 97, 502, 0, 0, 0, 0, 238, 71, 0, 0, 0, 0, 458, 259, 0, 0, 0, 0, 784, 48, 0, 0, 0, 0, 1075, 256, 0, 0, 0, 0, 841, 584, 0, 0, 0, 0, 624, 315, 0, 0, 0, 0, 288, 563, 0, 0, 0, 0, 97, 502)
+}
+point_count = 9
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -15,9 +22,9 @@ script = ExtResource("1_d5716")
 [node name="Title" type="RichTextLabel" parent="."]
 layout_mode = 2
 offset_left = 1.0
-offset_top = 98.0
+offset_top = 79.0
 offset_right = 1149.0
-offset_bottom = 223.0
+offset_bottom = 204.0
 theme_override_font_sizes/normal_font_size = 72
 bbcode_enabled = true
 text = "[center]On A Roll"
@@ -25,24 +32,24 @@ fit_content = true
 
 [node name="Title2" type="RichTextLabel" parent="."]
 layout_mode = 2
-offset_left = 781.0
-offset_top = 329.0
-offset_right = 1214.0
-offset_bottom = 455.0
+offset_left = 701.0
+offset_top = 292.0
+offset_right = 1134.0
+offset_bottom = 452.0
 theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
-text = "Controls:
-Press Up Arrow to grow
-Press Down Arrow to shrink
-Press P to pause game"
+text = "[b][font_size=40]Controls:[/font_size][/b]
+- Press Up Arrow to grow
+- Press Down Arrow to shrink
+- Press P to pause game"
 fit_content = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
-offset_left = 463.0
-offset_top = 320.0
-offset_right = 688.0
-offset_bottom = 450.0
+offset_left = 209.0
+offset_top = 300.0
+offset_right = 472.0
+offset_bottom = 430.0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
@@ -59,13 +66,26 @@ text = "Quit"
 
 [node name="MadeBy" type="RichTextLabel" parent="."]
 layout_mode = 2
-offset_top = 523.0
-offset_right = 1149.0
-offset_bottom = 601.0
-theme_override_font_sizes/normal_font_size = 40
+offset_left = 3.0
+offset_top = 581.0
+offset_right = 1152.0
+offset_bottom = 635.0
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "[center]Created by Firoty and Steve Giordano"
+text = "[center]Created by Firoty and Steve"
 fit_content = true
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_elj85")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(97, 502)
+rotation = -1.25462
+rotates = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ev4uk")
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
