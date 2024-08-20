@@ -9,7 +9,7 @@ var Level3 = \"res://scenes/level_3.tscn\"
 var Level4 = \"res://scenes/level_4.tscn\"
 var gameOverScreen = \"res://scenes/game_over_screen.tscn\"
 
-var CurrentLevel = 0
+@export var CurrentLevel = 0
 var list = [Level1, Level2, Level3, Level4]
 
 var isPaused = false
