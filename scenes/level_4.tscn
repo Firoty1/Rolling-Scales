@@ -196,6 +196,11 @@ position = Vector2(15591, 5128)
 rotation = -1.22697
 scale = Vector2(0.5, 0.5)
 
+[node name="Spike28" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(16888, 5317)
+rotation = -1.22697
+scale = Vector2(0.4, 0.4)
+
 [node name="Spike12" parent="." instance=ExtResource("3_36cjh")]
 position = Vector2(16234, 5882)
 rotation = -1.22697
