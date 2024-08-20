@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://lrp0fl70opiy"]
+
+[ext_resource type="PackedScene" uid="uid://b4udhsebdtf6v" path="res://scenes/HUD.tscn" id="1_qqtr8"]
+[ext_resource type="PackedScene" uid="uid://bxaav1pybxfvx" path="res://scenes/wall_or_floor.tscn" id="2_uqehd"]
+[ext_resource type="PackedScene" uid="uid://ctwchxsj2ndyr" path="res://scenes/spike.tscn" id="3_36cjh"]
+[ext_resource type="PackedScene" uid="uid://bnhexur0ry2ny" path="res://scenes/ball.tscn" id="4_ifkbc"]
+[ext_resource type="PackedScene" uid="uid://cfu4xxf753ecx" path="res://scenes/spring.tscn" id="5_4neju"]
+
+[node name="Level4" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource("1_qqtr8")]
+
+[node name="WallOrFloor" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(67, 1008)
+rotation = 0.34383
+scale = Vector2(7.23495, 2.16257)
+
+[node name="WallOrFloor2" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(4799, 2666)
+rotation = 0.34383
+scale = Vector2(7.23495, 2.08726)
+
+[node name="WallOrFloor3" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(1479, -75.0001)
+rotation = 0.34383
+scale = Vector2(0.50008, 1.22621)
+
+[node name="WallOrFloor4" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(2511, 2184)
+rotation = 0.34383
+scale = Vector2(1.89393, 1.22621)
+
+[node name="WallOrFloor5" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(4352, 2104)
+rotation = 0.34383
+scale = Vector2(0.166247, 3.59313)
+
+[node name="WallOrFloor6" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(5968, 1734)
+rotation = 0.34383
+scale = Vector2(0.166247, 0.743973)
+
+[node name="WallOrFloor7" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(6125, 1249)
+rotation = 0.34383
+scale = Vector2(0.166247, 0.0707425)
+
+[node name="WallOrFloor8" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(4829, 773)
+rotation = 0.34383
+scale = Vector2(0.166247, 0.0707425)
+
+[node name="WallOrFloor9" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(7104, 3828)
+rotation = 0.34383
+scale = Vector2(1.89393, 1.22621)
+
+[node name="WallOrFloor10" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(9505, 4351)
+rotation = 0.34383
+scale = Vector2(7.23495, 2.08726)
+
+[node name="WallOrFloor11" parent="." instance=ExtResource("2_uqehd")]
+position = Vector2(9970, 2965)
+rotation = 0.34383
+scale = Vector2(0.50008, 2.20813)
+
+[node name="Spike" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(1342, 290)
+rotation = 3.48542
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike2" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(2474, 1751)
+rotation = 0.34383
+scale = Vector2(0.8, 0.8)
+
+[node name="Spike3" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(4736, 1054)
+rotation = 0.34383
+scale = Vector2(0.2, 0.2)
+
+[node name="Spike4" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(4817, 796)
+rotation = 3.48542
+scale = Vector2(0.2, 0.2)
+
+[node name="Spike5" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(6110, 1271)
+rotation = 3.48542
+scale = Vector2(0.2, 0.2)
+
+[node name="Spike6" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(6046, 1512)
+rotation = 0.34383
+scale = Vector2(0.2, 0.2)
+
+[node name="Spike7" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(5891, 1955)
+rotation = -2.79776
+scale = Vector2(0.2, 0.2)
+
+[node name="Spike8" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(7183, 3437)
+rotation = 0.34383
+scale = Vector2(0.8, 0.8)
+
+[node name="Spike9" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(9643, 3397)
+rotation = -1.22697
+scale = Vector2(0.5, 0.5)
+
+[node name="Spike10" parent="." instance=ExtResource("3_36cjh")]
+position = Vector2(4441, 1672)
+rotation = -1.22697
+scale = Vector2(0.5, 0.5)
+
+[node name="Ball" parent="." instance=ExtResource("4_ifkbc")]
+position = Vector2(347, 92)
+
+[node name="Camera2D" type="Camera2D" parent="Ball"]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Spring" parent="." instance=ExtResource("5_4neju")]
+position = Vector2(1179, 599)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring2" parent="." instance=ExtResource("5_4neju")]
+position = Vector2(4130, 1655)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
+
+[node name="Spring3" parent="." instance=ExtResource("5_4neju")]
+position = Vector2(5500, 2146)
+rotation = 0.34383
+scale = Vector2(0.15, 0.15)
